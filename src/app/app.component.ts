@@ -10,6 +10,7 @@ export interface Item {
 export interface Category {
   name: string;
   items: Item[];
+  expanded?: boolean;
 }
 
 @Component({
@@ -23,25 +24,46 @@ export class AppComponent {
 
   categories: Category[] = [
     {
-      name: 'Cakes',
+      name: '各式甜品',
+      expanded: false,
       items: [
-        {name: 'Chocolate Cake', price: 10},
-        {name: 'Carrot Cake', price: 12},
-        {name: 'Red Velvet Cake', price: 15}
+        {name: '椰子冻', price: 10},
+        {name: '椰青面条饱饱碗', price: 9},
+        {name: '奥利奥鲜奶麻薯', price: 6},
+        {name: '玛格丽特饼干', price: 7}
       ]
     },
     {
-      name: 'Pastries',
+      name: '盒子蛋糕',
+      expanded: false,
       items: [
-        {name: 'Croissant', price: 3},
-        {name: 'Danish', price: 3.5},
-        {name: 'Turnover', price: 4}
+        {name: '奥利奥海盐盒子', price: 10},
+        {name: '芋泥麻薯盒子', price: 11},
+        {name: '醇香栗子盒子', price: 11},
+        {name: '芒果血糯米盒子', price: 10},
+        {name: '奶香玉米盒子', price: 9},
+        {name: '草莓酱多多盒子', price: 10},
+        {name: '芒果酱多多盒子', price: 10}
       ]
     }
   ];
 
   cartItems: Item[] = [];
   discount = 0.85;
+  expandedCategory: Category | null = null;
+
+  expandCategory(category: Category) {
+    if (this.expandedCategory && this.expandedCategory !== category) {
+      this.expandedCategory.expanded = false;
+    }
+    category.expanded = true;
+    this.expandedCategory = category;
+  }
+
+  collapseCategory(category: Category) {
+    category.expanded = false;
+    this.expandedCategory = null;
+  }
 
   addItem(item: Item) {
     let existingItem = this.cartItems.find(i => i.name === item.name);

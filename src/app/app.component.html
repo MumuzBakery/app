@@ -1,6 +1,8 @@
 <div class="container">
   <div class="left-section">
-    <mat-expansion-panel *ngFor="let category of categories">
+    <mat-accordion>
+    <mat-expansion-panel  
+    *ngFor="let category of categories" hideToggle="true">
       <mat-expansion-panel-header>
         <mat-panel-title>{{ category.name }}</mat-panel-title>
       </mat-expansion-panel-header>
@@ -10,6 +12,7 @@
         </a>
       </mat-nav-list>
     </mat-expansion-panel>
+  </mat-accordion>
   </div>
 
   <div class="right-section">
