@@ -39,8 +39,8 @@ table{
 .mat-column-name {
   word-wrap: break-word !important;
   white-space: unset !important;
-  flex: 0 0 20% !important;
-  width: 20% !important;
+  flex: 0 0 12% !important;
+  width: 12% !important;
   overflow-wrap: break-word;
   word-wrap: break-word;
   word-break: break-word;

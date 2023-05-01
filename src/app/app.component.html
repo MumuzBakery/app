@@ -50,7 +50,7 @@
             <mat-form-field appearance="fill">
               <mat-label>Discount</mat-label>
               <mat-select [(ngModel)]="discount">
-                <mat-option *ngFor="let discount of [0.85, 1.00]" [value]="discount">
+                <mat-option *ngFor="let discount of [0.85, 1.00]" [value]="discount" >
                   {{ discount }}
                 </mat-option>
               </mat-select>
