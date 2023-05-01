@@ -5,107 +5,94 @@
 }
 
 .left-section {
-  width: 30%;
+  width: 35%;
   height: 100%;
   background-color: #f5f5f5;
   overflow-y: auto;
+  border-right:1px solid #f1f1f1
 }
 
 .right-section {
-    width: 70%; 
+  width: 65%; 
   height: 100%;
   background-color: #ffffff;
   overflow-y: auto;
 }
 
-.mat-expansion-panel-spacing {
-   margin: 0px !important;
-}
-
 table{
     width: 100%;
    }
-   
-   .mat-column-name {
-     word-wrap: break-word !important;
-     white-space: unset !important;
-     flex: 0 0 33% !important;
-     width: 33% !important;
-     overflow-wrap: break-word;
-     word-wrap: break-word;
-   
-     word-break: break-word;
-   
-     -ms-hyphens: auto;
-     -moz-hyphens: auto;
-     -webkit-hyphens: auto;
-     hyphens: auto;
-   }
-   
-   .mat-column-quantity {
-     word-wrap: break-word !important;
-     white-space: unset !important;
-     flex: 0 0 33% !important;
-     width: 33% !important;
-     overflow-wrap: break-word;
-     word-wrap: break-word;
-   
-     word-break: break-word;
-   
-     -ms-hyphens: auto;
-     -moz-hyphens: auto;
-     -webkit-hyphens: auto;
-     hyphens: auto;
-   }
 
-   .mat-column-remove {
-    word-wrap: break-word !important;
-    white-space: unset !important;
-    flex: 0 0 33% !important;
-    width: 33% !important;
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-  
-    word-break: break-word;
-  
-    -ms-hyphens: auto;
-    -moz-hyphens: auto;
-    -webkit-hyphens: auto;
-    hyphens: auto;
-  }
+   .mat-expansion-panel-spacing {
+    margin: 0px 0;
+}
 
-  .mat-column-total {
-    word-wrap: break-word !important;
-    white-space: unset !important;
-    flex: 0 0 33% !important;
-    width: 33% !important;
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-  
-    word-break: break-word;
-  
-    -ms-hyphens: auto;
-    -moz-hyphens: auto;
-    -webkit-hyphens: auto;
-    hyphens: auto;
-  }
+.mat-mdc-table {
+  table-layout:fixed;
+  white-space: normal;
+}
+/*
+.mdc-data-table__cell, .mdc-data-table__header-cell {
+  padding: 0 0px 0 10px !important;
+}*/
 
-  .mat-column-discount {
-    word-wrap: break-word !important;
-    white-space: unset !important;
-    flex: 0 0 33% !important;
-    width: 33% !important;
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-  
-    word-break: break-word;
-  
-    -ms-hyphens: auto;
-    -moz-hyphens: auto;
-    -webkit-hyphens: auto;
-    hyphens: auto;
-  }
-  
+.mat-column-name {
+  word-wrap: break-word !important;
+  white-space: unset !important;
+  flex: 0 0 20% !important;
+  width: 20% !important;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+.mat-column-quantity {
+  word-wrap: break-word !important;
+  white-space: unset !important;
+  flex: 0 0 12% !important;
+  width: 12% !important;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+.mat-column-price {
+  word-wrap: break-word !important;
+  white-space: unset !important;
+  flex: 0 0 10% !important;
+  width: 10% !important;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+.mat-column-remove {
+  word-wrap: break-word !important;
+  white-space: unset !important;
+  flex: 0 0 7% !important;
+  width: 7% !important;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+
 
 
 

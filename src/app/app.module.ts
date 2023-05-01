@@ -12,6 +12,7 @@ import { MatExpansionModule } from '@angular/material/expansion'; // add this li
 import { MatTableModule } from '@angular/material/table';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatSelectModule } from '@angular/material/select';
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
@@ -29,6 +30,7 @@ import { FormsModule } from '@angular/forms';
     MatTableModule,    
     MatInputModule,
     MatFormFieldModule,
+    MatSelectModule,
     FormsModule
   ],
   providers: [],
