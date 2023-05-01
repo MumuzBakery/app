@@ -92,13 +92,17 @@ table{
   hyphens: auto;
 }
 
-
-
-
-
+.long-panel { 
+  height: 100px !important;
+}
   
-  
+::ng-deep .mat-select-trigger {
+  min-width: 80vw;
+}
 
+::ng-deep .mat-select-panel {
+  max-height: 80vh !important;
+}
 
 
 
